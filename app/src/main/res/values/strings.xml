@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PianoGrupo01</string>
+    <string name="logo">Logo</string>
+    <string name="foto_jorge">Foto_Jorge</string>
+    <string name="jorge">Jorge Francisco Cisneros Zometa</string>
+    <string name="foto_esme">Foto_esme</string>
+    <string name="esme">Esmeralda Noemi García Borja</string>
+    <string name="foto_fer">Foto_fer</string>
+    <string name="fernando">Fernando Ulises Gómez Herrera</string>
 </resources>

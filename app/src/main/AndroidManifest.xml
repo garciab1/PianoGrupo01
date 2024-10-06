@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PianoGrupo01"
         tools:targetApi="31">
         <activity
+            android:name=".piano_instrumentos"
+            android:exported="false" />
+        <activity
+            android:name=".piano_jungla"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
