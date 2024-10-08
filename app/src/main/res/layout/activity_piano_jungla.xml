@@ -15,73 +15,81 @@
         android:id="@+id/button9"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_1" />
+        android:text="@string/_1"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button10"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_2" />
+        android:text="@string/_2"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button11"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_3" />
+        android:text="@string/_3"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button12"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_4" />
+        android:text="@string/_4"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button13"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_5" />
+        android:text="@string/_5"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button14"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_6" />
+        android:text="@string/_6"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button15"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_7" />
+        android:text="@string/_7"
+        android:textColor="@color/cardview_shadow_end_color" />
 
     <Button
         android:id="@+id/button16"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="275dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="8dp"
         android:layout_weight="1"
-        android:text="@string/_8" />
+        android:text="@string/_8"
+        android:textColor="@color/cardview_shadow_end_color" />
 </LinearLayout>
