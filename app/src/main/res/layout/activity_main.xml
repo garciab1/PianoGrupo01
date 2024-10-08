@@ -1,19 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    style="?android:attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/teclas"
+    android:gravity="bottom"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/c"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/d"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/e"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/f"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button5"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/g"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button6"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/a"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button7"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/b"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button8"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="75dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="@string/cOc"
+        android:textSize="24sp" />
+</LinearLayout>

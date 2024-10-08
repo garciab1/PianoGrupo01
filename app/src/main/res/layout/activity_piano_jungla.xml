@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    style="?android:attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pianojungla"
+    android:gravity="bottom"
+    android:orientation="horizontal"
     tools:context=".piano_jungla">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/button9"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_1" />
+
+    <Button
+        android:id="@+id/button10"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_2" />
+
+    <Button
+        android:id="@+id/button11"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_3" />
+
+    <Button
+        android:id="@+id/button12"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_4" />
+
+    <Button
+        android:id="@+id/button13"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_5" />
+
+    <Button
+        android:id="@+id/button14"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_6" />
+
+    <Button
+        android:id="@+id/button15"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_7" />
+
+    <Button
+        android:id="@+id/button16"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="@string/_8" />
+</LinearLayout>
