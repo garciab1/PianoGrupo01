@@ -23,4 +23,8 @@
     <string name="_7">7</string>
     <string name="_8">8</string>
     <string name="_1">1</string>
+
+    <string name="Exit">Salir</string>
+    <string name="about_us">Acerca de nosotros</string>
+    <string name="change_piano">Cambiar Tipo de Piano</string>
 </resources>
