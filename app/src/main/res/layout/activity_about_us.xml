@@ -42,8 +42,8 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="189dp"
-            android:layout_height="124dp"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/jorge"
             tools:ignore="ContentDescription" />
@@ -57,7 +57,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="251dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
@@ -81,7 +81,7 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="261dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
@@ -93,7 +93,7 @@
             android:layout_width="200dp"
             android:layout_height="155dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/img"
+            app:srcCompat="@drawable/fer"
             tools:ignore="ContentDescription" />
     </LinearLayout>
 

@@ -36,7 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             case "Salir":
-                finish();
+                finishAffinity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -44,18 +44,23 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     private void showPianoOptionsDialog() {
-        final String[] pianoOptions = {"Piano", "Piano de la jungla", "Piano de instrumentos", "Piano MIDI"};
+        final String[] pianoOptions = {
+                "Piano Tradicional",
+                "Piano Infantil de la Selva",
+                "Piano de instrumentos",
+                "Piano MIDI"
+        };
 
         new AlertDialog.Builder(this).setTitle("Selecciona un tipo de piano")
                 .setItems(pianoOptions, (dialog, which) -> {
                     switch (which) {
                         case 0:
-                            cambiarPiano("Piano");
+                            cambiarPiano("Piano Tradicional");
                             Intent intent = new Intent( this, MainActivity.class);
                             startActivity(intent);
                             break;
                         case 1:
-                            cambiarPiano("Piano de la jungla");
+                            cambiarPiano("Piano Infantil de la Selva");
                             Intent intent2 = new Intent( this, piano_jungla.class);
                             startActivity(intent2);
                             break;
