@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class piano_instrumentos extends AppCompatActivity {
+public class piano_instrumentos extends BaseActivity {
 
     private Button[] noteButtons;
     private ImageButton[] noteimageButtons;
