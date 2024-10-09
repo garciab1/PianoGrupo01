@@ -1,10 +1,12 @@
 package sv.edu.catolica.pianogrupo01;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getTitle().toString()){
+            case "Cambiar Tipo de Piano":
+                showPianoOptionsDialog();
+                return true;
             case "Acerca de nosotros":
                 Intent intent = new Intent(this, About_us.class);
                 startActivity(intent);
@@ -47,7 +52,44 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-
         }
+    }
+
+    private void showPianoOptionsDialog() {
+        // Lista de opciones de pianos
+        final String[] pianoOptions = {"Piano", "Piano de la jungla", "Piano de instrumentos", "Piano MIDI"};
+
+        // Crear un AlertDialog con la lista de opciones
+        new AlertDialog.Builder(this)
+                .setTitle("Selecciona un tipo de piano")
+                .setItems(pianoOptions, (dialog, which) -> {
+                    // Aquí puedes manejar la acción dependiendo de la selección del usuario
+                    switch (which) {
+                        case 0:
+                            // Acción para "Piano"
+                            cambiarPiano("Piano");
+                            break;
+                        case 1:
+                            // Acción para "Piano de la jungla"
+                            cambiarPiano("Piano de la jungla");
+                            break;
+                        case 2:
+                            // Acción para "Piano de instrumentos"
+                            cambiarPiano("Piano de instrumentos");
+                            break;
+                        case 3:
+                            // Acción para "Piano MIDI"
+                            cambiarPiano("Piano MIDI");
+                            break;
+                    }
+                })
+                .show();
+    }
+
+    // Método para cambiar el tipo de piano (implementa tu lógica aquí)
+    private void cambiarPiano(String pianoTipo) {
+        // Aquí puedes agregar la lógica para cambiar el tipo de piano en tu aplicación
+        // Por ejemplo, cambiar la vista o cargar nuevos datos
+        Toast.makeText(this, "Piano cambiado a: " + pianoTipo, Toast.LENGTH_SHORT).show();
     }
 }
