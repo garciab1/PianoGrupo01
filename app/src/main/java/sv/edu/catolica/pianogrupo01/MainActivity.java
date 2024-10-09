@@ -86,10 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    // Método para cambiar el tipo de piano (implementa tu lógica aquí)
     private void cambiarPiano(String pianoTipo) {
-        // Aquí puedes agregar la lógica para cambiar el tipo de piano en tu aplicación
-        // Por ejemplo, cambiar la vista o cargar nuevos datos
         Toast.makeText(this, "Piano cambiado a: " + pianoTipo, Toast.LENGTH_SHORT).show();
     }
 }
