@@ -2,9 +2,11 @@ package sv.edu.catolica.pianogrupo01;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -15,78 +17,70 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
-    private Button about, exit;
+    private Button[] noteButtons;
+    private int[] noteSounds;
+
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_piano_instrumentos);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.intrument), (v, insets) -> {
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
-        return true;
-    }
+        noteButtons = new Button[]{
+                findViewById(R.id.button_do),
+                findViewById(R.id.button_re),
+                findViewById(R.id.button_mi),
+                findViewById(R.id.button_fa),
+                findViewById(R.id.button_sol),
+                findViewById(R.id.button_la),
+                findViewById(R.id.button_si)
+        };
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getTitle().toString()){
-            case "Cambiar Tipo de Piano":
-                showPianoOptionsDialog();
-                return true;
-            case "Acerca de nosotros":
-                Intent intent = new Intent(this, About_us.class);
-                startActivity(intent);
-                return true;
-            case "Salir":
-                finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        noteSounds = new int[]{
+            R.raw.nota,  // DO
+            R.raw.re,    // RE
+            R.raw.mi,    // MI
+            R.raw.fa,    // FA
+            R.raw.sol,   // SOL
+            R.raw.la,    // LA
+            R.raw.si     // SI
+        };
+
+        for (int i = 0; i < noteButtons.length; i++) {
+            final int noteIndex = i;
+            noteButtons[i].setOnClickListener(view -> reproducirSonido(noteIndex));
         }
     }
 
-    private void showPianoOptionsDialog() {
-        // Lista de opciones de pianos
-        final String[] pianoOptions = {"Piano", "Piano de la jungla", "Piano de instrumentos", "Piano MIDI"};
+    private void reproducirSonido(int noteIndex) {
+        if (mediaPlayer != null) {
+            mediaPlayer.release();  // Liberar recursos de MediaPlayer antes de crear uno nuevo
+        }
 
-        // Crear un AlertDialog con la lista de opciones
-        new AlertDialog.Builder(this)
-                .setTitle("Selecciona un tipo de piano")
-                .setItems(pianoOptions, (dialog, which) -> {
-                    // Aquí puedes manejar la acción dependiendo de la selección del usuario
-                    switch (which) {
-                        case 0:
-                            // Acción para "Piano"
-                            cambiarPiano("Piano");
-                            break;
-                        case 1:
-                            // Acción para "Piano de la jungla"
-                            cambiarPiano("Piano de la jungla");
-                            break;
-                        case 2:
-                            // Acción para "Piano de instrumentos"
-                            cambiarPiano("Piano de instrumentos");
-                            break;
-                        case 3:
-                            // Acción para "Piano MIDI"
-                            cambiarPiano("Piano MIDI");
-                            break;
-                    }
-                })
-                .show();
+        mediaPlayer = MediaPlayer.create(this, noteSounds[noteIndex]);
+        if (mediaPlayer != null) {
+            mediaPlayer.start();
+            mediaPlayer.setOnCompletionListener(mp -> mp.release());  // Liberar al finalizar
+        } else {
+            Toast.makeText(this, "Error al reproducir sonido", Toast.LENGTH_SHORT).show();
+        }
     }
 
-    private void cambiarPiano(String pianoTipo) {
-        Toast.makeText(this, "Piano cambiado a: " + pianoTipo, Toast.LENGTH_SHORT).show();
+    @Override
+    protected void onDestroy() {
+        if (mediaPlayer != null) {
+            mediaPlayer.release();  // Liberar recursos al destruir la actividad
+            mediaPlayer = null;
+        }
+        super.onDestroy();
     }
 }

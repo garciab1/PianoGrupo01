@@ -69,14 +69,18 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="86dp"
+        <ImageButton
+            android:id="@+id/button_mii_image"
+            android:layout_width="84dp"
             android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="re"
+            android:scaleType="fitCenter"
             android:src="@drawable/pollo" />
 
         <Button
-            android:id="@+id/button_mi"
+            android:id="@+id/button_mii"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -92,14 +96,18 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="83dp"
-            android:layout_height="124dp"
+        <ImageButton
+            android:id="@+id/button_faa_image"
+            android:layout_width="84dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="re"
+            android:scaleType="fitCenter"
             android:src="@drawable/cerdo" />
 
         <Button
-            android:id="@+id/button_fa"
+            android:id="@+id/button_faa"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -115,14 +123,18 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="87dp"
-            android:layout_height="126dp"
+        <ImageButton
+            android:id="@+id/button_sol_image"
+            android:layout_width="84dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="re"
+            android:scaleType="fitCenter"
             android:src="@drawable/sheep" />
 
         <Button
-            android:id="@+id/button_sol"
+            android:id="@+id/button_soll"
             android:layout_width="wrap_content"
             android:layout_height="334dp"
             android:layout_weight="1"
@@ -138,14 +150,18 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="87dp"
-            android:layout_height="124dp"
+        <ImageButton
+            android:id="@+id/button_laa_image"
+            android:layout_width="84dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="re"
+            android:scaleType="fitCenter"
             android:src="@drawable/cocodrile" />
 
         <Button
-            android:id="@+id/button_la"
+            android:id="@+id/button_laa"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -161,14 +177,18 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="85dp"
-            android:layout_height="126dp"
+        <ImageButton
+            android:id="@+id/button_sii_image"
+            android:layout_width="84dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:contentDescription="re"
+            android:scaleType="fitCenter"
             android:src="@drawable/mono" />
 
         <Button
-            android:id="@+id/button_si"
+            android:id="@+id/button_sii"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

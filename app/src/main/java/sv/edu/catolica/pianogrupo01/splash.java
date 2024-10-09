@@ -33,7 +33,7 @@ public class splash extends AppCompatActivity {
             public void run() {
 
                 if(!Boton){
-                    Intent ventana2 = new Intent(splash.this,MainActivity.class);
+                    Intent ventana2 = new Intent(splash.this, MainActivity.class);
                     startActivity(ventana2);
                     finish();
                 }

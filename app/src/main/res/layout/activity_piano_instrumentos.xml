@@ -68,10 +68,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button_miinstru_image"
             android:layout_width="100dp"
             android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
             android:src="@drawable/arpa" />
 
         <Button
@@ -91,10 +94,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button_fainstru_image"
             android:layout_width="100dp"
-            android:layout_height="124dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
             android:src="@drawable/guitarra" />
 
         <Button
@@ -114,10 +120,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button_solinstru_image"
             android:layout_width="100dp"
-            android:layout_height="126dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
             android:src="@drawable/maracas" />
 
         <Button
@@ -137,10 +146,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="103dp"
-            android:layout_height="117dp"
+        <ImageButton
+            android:id="@+id/button_lainstru_image"
+            android:layout_width="100dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
             android:src="@drawable/barduka" />
 
         <Button
@@ -160,10 +172,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="110dp"
-            android:layout_height="126dp"
+        <ImageButton
+            android:id="@+id/button_siinstru_image"
+            android:layout_width="100dp"
+            android:layout_height="128dp"
             android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
             android:src="@drawable/trompeta" />
 
         <Button

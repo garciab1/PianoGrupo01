@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".piano_midi">
+
+    <Button
+        android:id="@+id/button_do"
+        android:layout_width="0dp"
+        android:layout_height="516dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Do"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_re"
+        android:layout_width="0dp"
+        android:layout_height="504dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Re"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_mi"
+        android:layout_width="0dp"
+        android:layout_height="490dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Mi"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_fa"
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Fa"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_sol"
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Sol"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_la"
+        android:layout_width="0dp"
+        android:layout_height="499dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="La"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_si"
+        android:layout_width="0dp"
+        android:layout_height="547dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Si"
+        android:textColor="#000000" />
+
+</LinearLayout>
