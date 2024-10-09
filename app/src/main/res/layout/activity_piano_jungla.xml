@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/jungla"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:gravity="center"
     android:padding="16dp"
-    android:background="#000000">
+    android:background="#000000"
+    tools:ignore="DisableBaselineAlignment">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_doo_image"
@@ -22,24 +27,28 @@
             android:layout_gravity="center"
             android:background="@null"
             android:scaleType="fitCenter"
-            android:src="@drawable/perro" />
+            android:src="@drawable/perro"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
 
         <Button
             android:id="@+id/button_doo"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="268dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
             android:drawableBottom="@color/white"
-            android:text="Do"
+            android:text="do"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,InefficientWeight,NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -47,26 +56,30 @@
             android:layout_width="84dp"
             android:layout_height="128dp"
             android:layout_gravity="center"
-            android:background="@null"
+            android:background="@color/white"
             android:contentDescription="re"
             android:scaleType="fitCenter"
-            android:src="@drawable/rinoceronte" />
+            android:src="@drawable/rinoceronte"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,VisualLintBounds" />
 
         <Button
             android:id="@+id/button_ree"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="Re"
+            android:text="@string/notare"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -75,25 +88,29 @@
             android:layout_height="128dp"
             android:layout_gravity="center"
             android:background="@null"
-            android:contentDescription="re"
+            android:contentDescription="@string/ee"
             android:scaleType="fitCenter"
-            android:src="@drawable/pollo" />
+            android:src="@drawable/pollo"
+            tools:ignore="VisualLintBounds" />
 
         <Button
             android:id="@+id/button_mii"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
-            android:text="Mi"
+            android:backgroundTint="@color/white"
+            android:text="@string/mi"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -102,9 +119,10 @@
             android:layout_height="128dp"
             android:layout_gravity="center"
             android:background="@null"
-            android:contentDescription="re"
+            android:contentDescription="@string/re"
             android:scaleType="fitCenter"
-            android:src="@drawable/cerdo" />
+            android:src="@drawable/cerdo"
+            tools:ignore="VisualLintBounds" />
 
         <Button
             android:id="@+id/button_faa"
@@ -112,15 +130,18 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="Fa"
+            android:text="@string/fa"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -131,7 +152,8 @@
             android:background="@null"
             android:contentDescription="re"
             android:scaleType="fitCenter"
-            android:src="@drawable/sheep" />
+            android:src="@drawable/sheep"
+            tools:ignore="HardcodedText,VisualLintBounds" />
 
         <Button
             android:id="@+id/button_soll"
@@ -139,15 +161,18 @@
             android:layout_height="334dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="Sol"
+            android:text="@string/sol"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="InefficientWeight,NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -156,9 +181,10 @@
             android:layout_height="128dp"
             android:layout_gravity="center"
             android:background="@null"
-            android:contentDescription="re"
+            android:contentDescription="@string/reeeee"
             android:scaleType="fitCenter"
-            android:src="@drawable/cocodrile" />
+            android:src="@drawable/cocodrile"
+            tools:ignore="VisualLintBounds" />
 
         <Button
             android:id="@+id/button_laa"
@@ -168,13 +194,15 @@
             android:backgroundTint="#FFFFFF"
             android:text="La"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,NestedWeights" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="@color/white"
         android:orientation="vertical">
 
         <ImageButton
@@ -185,7 +213,8 @@
             android:background="@null"
             android:contentDescription="re"
             android:scaleType="fitCenter"
-            android:src="@drawable/mono" />
+            android:src="@drawable/mono"
+            tools:ignore="HardcodedText,VisualLintBounds" />
 
         <Button
             android:id="@+id/button_sii"
@@ -193,9 +222,10 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="Si"
+            android:text="@string/si"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="NestedWeights" />
     </LinearLayout>
 
 </LinearLayout>

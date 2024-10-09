@@ -1,195 +1,316 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/intrument"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="horizontal"
-    android:gravity="center"
-    android:padding="16dp"
-    android:background="#000000">
+    android:weightSum="7"
+    tools:ignore="DisableBaselineAlignment">
 
+    <!-- Tecla DO -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="3dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="@color/design_default_color_secondary_variant"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_dooinstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/flauta" />
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/flauta"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/donegra"
+            android:layout_width="34dp"
+            android:layout_height="460dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_dooinstru"
-            android:layout_width="wrap_content"
-            android:layout_height="270dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
-            android:drawableBottom="@color/white"
+            android:layout_width="109dp"
+            android:layout_height="523dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
             android:text="Do"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,RtlHardcoded,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            tools:ignore="TextContrastCheck" />
+
     </LinearLayout>
 
+    <!-- Tecla RE -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="7dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:background="@android:color/system_accent3_700"
+        android:orientation="vertical"
+        tools:ignore="NewApi">
 
         <ImageButton
             android:id="@+id/button_reeinstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/tambor" />
+            android:background="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/tambor"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/renegra"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_reeinstru"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_width="109dp"
+            android:layout_height="493dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="@android:color/system_accent3_700"
             android:text="Re"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,NewApi,TextContrastCheck,VisualLintBounds" />
+
     </LinearLayout>
 
+    <!-- Tecla MI -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="#F57F17"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_miinstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/arpa" />
+            android:background="#FFFFFF"
+            android:contentDescription="Arpa, tecla Mi"
+            android:scaleType="fitXY"
+            android:src="@drawable/arpa"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/minegra"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_miinstru"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_height="493dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#F57F17"
             android:text="Mi"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
+    <!-- Tecla FA -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="#880E4F"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_fainstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/guitarra" />
+            android:background="#FFFFFF"
+            android:contentDescription="Guitarra, tecla Fa"
+            android:scaleType="fitXY"
+            android:src="@drawable/guitarra"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/fanegra"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_fainstru"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_height="493dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#880E4F"
             android:text="Fa"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
     </LinearLayout>
 
+    <!-- Tecla SOL -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_height="463dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="#558B2F"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_solinstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/maracas" />
+            android:background="#FFFFFF"
+            android:contentDescription="Maracas, tecla Sol"
+            android:scaleType="fitXY"
+            android:src="@drawable/maracas"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/solnegra"
+            android:layout_width="42dp"
+            android:layout_height="288dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_solinstru"
             android:layout_width="wrap_content"
-            android:layout_height="334dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_height="425dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#558B2F"
             android:text="Sol"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
     </LinearLayout>
 
+    <!-- Tecla LA -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="#283593"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_lainstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/barduka" />
+            android:background="#FFFFFF"
+            android:contentDescription="Barduka, tecla La"
+            android:scaleType="fitXY"
+            android:src="@drawable/barduka"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/lanegra"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_lainstru"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_width="109dp"
+            android:layout_height="493dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#283593"
             android:text="La"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="#BCAAA4"
+            tools:ignore="HardcodedText,TextContrastCheck,VisualLintBounds" />
     </LinearLayout>
 
+    <!-- Tecla SI -->
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="5dp"
+        android:layout_height="425dp"
+        android:layout_marginRight="4dp"
         android:layout_weight="1"
+        android:background="#F9A825"
         android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_siinstru_image"
             android:layout_width="100dp"
-            android:layout_height="128dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/trompeta" />
+            android:background="#FFFFFF"
+            android:contentDescription="Trompeta, tecla Si"
+            android:scaleType="fitXY"
+            android:src="@drawable/trompeta"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/sinegra"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            tools:ignore="NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button_siinstru"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="493dp"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#F9A825"
             android:text="Si"
-            android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 </LinearLayout>
