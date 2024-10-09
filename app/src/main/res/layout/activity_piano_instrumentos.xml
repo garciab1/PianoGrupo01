@@ -1,125 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    style="?android:attr/buttonBarStyle"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/intrument"
     android:layout_height="match_parent"
-    android:background="@drawable/instrumentos"
-    android:gravity="bottom"
-    android:orientation="vertical"
-    tools:context=".piano_instrumentos" >
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#000000">
 
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_dooinstru_image"
+            android:layout_width="100dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flauta" />
 
         <Button
-            android:id="@+id/button22"
-            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_dooinstru"
             android:layout_width="wrap_content"
-            android:layout_height="120dp"
+            android:layout_height="270dp"
             android:layout_weight="1"
-            android:text="@string/_1"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button28"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:layout_weight="1"
-            android:text="@string/_2" />
-
-        <Button
-            android:id="@+id/button29"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:layout_weight="1"
-            android:text="@string/_3"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button30"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:layout_weight="1"
-            android:text="@string/_4"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button31"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="120dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:text="@string/_5"
-            android:textColor="@color/cardview_shadow_end_color" />
+            android:backgroundTint="#FFFFFF"
+            android:drawableBottom="@color/white"
+            android:text="Do"
+            android:textColor="#000000"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
-        style="?android:attr/buttonBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_reeinstru_image"
+            android:layout_width="100dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tambor" />
 
         <Button
-            android:id="@+id/button23"
-            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/button_reeinstru"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Re"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arpa" />
+
+        <Button
+            android:id="@+id/button_miinstru"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Mi"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:src="@drawable/guitarra" />
+
+        <Button
+            android:id="@+id/button_fainstru"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Fa"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:src="@drawable/maracas" />
+
+        <Button
+            android:id="@+id/button_solinstru"
+            android:layout_width="wrap_content"
+            android:layout_height="334dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Sol"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="103dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:src="@drawable/barduka" />
+
+        <Button
+            android:id="@+id/button_lainstru"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="La"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
             android:layout_width="110dp"
-            android:layout_height="265dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:text="@string/_6"
-            android:textColor="@color/cardview_shadow_end_color" />
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:src="@drawable/trompeta" />
 
         <Button
-            android:id="@+id/button24"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="15dp"
-            android:layout_height="265dp"
-            android:layout_marginBottom="10dp"
+            android:id="@+id/button_siinstru"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/_7"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button25"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="15dp"
-            android:layout_height="265dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:text="@string/_8"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button26"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="20dp"
-            android:layout_height="265dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:text="@string/a"
-            android:textColor="@color/cardview_shadow_end_color" />
-
-        <Button
-            android:id="@+id/button27"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="120dp"
-            android:layout_height="265dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:text="@string/c"
-            android:textColor="@color/cardview_shadow_end_color" />
+            android:backgroundTint="#FFFFFF"
+            android:text="Si"
+            android:textColor="#000000"
+            android:textSize="24sp" />
     </LinearLayout>
+
 </LinearLayout>

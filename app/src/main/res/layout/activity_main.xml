@@ -1,96 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    style="?android:attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/teclas"
-    android:gravity="bottom"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:background="#000000"
+    android:padding="16dp">
 
     <Button
-        android:id="@+id/button"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_do"
+        android:layout_width="0dp"
+        android:layout_height="516dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/c"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Do"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button2"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_re"
+        android:layout_width="0dp"
+        android:layout_height="504dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/d"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Re"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button3"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_mi"
+        android:layout_width="0dp"
+        android:layout_height="490dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/e"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Mi"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button4"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_fa"
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/f"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Fa"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button5"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_sol"
+        android:layout_width="0dp"
+        android:layout_height="501dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/g"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Sol"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button6"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_la"
+        android:layout_width="0dp"
+        android:layout_height="499dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/a"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="La"
+        android:textColor="#000000" />
 
     <Button
-        android:id="@+id/button7"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
+        android:id="@+id/button_si"
+        android:layout_width="0dp"
+        android:layout_height="547dp"
+        android:layout_margin="2dp"
         android:layout_weight="1"
-        android:text="@string/b"
-        android:textSize="24sp" />
+        android:backgroundTint="#FFFFFF"
+        android:text="Si"
+        android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/button8"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="75dp"
-        android:layout_height="175dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1"
-        android:text="@string/cOc"
-        android:textSize="24sp" />
 </LinearLayout>
