@@ -71,20 +71,35 @@ public class piano_instrumentos extends BaseActivity {
                 R.raw.trompeta     // SI
         };
 
+        String[] instrumentos = {"Flauta", "Bateria", "Arpa", "Guitarra", "Maracas", "Conga", "Trompeta"};
+
         for (int i = 0; i < noteButtons.length; i++){
             final int index = i;
-            noteButtons[i].setOnClickListener(view -> reproducirSonido(index));
+            noteButtons[i].setOnClickListener(view -> {
+                reproducirSonido(index);
+                instrumentosonando(instrumentos[index]);
+            });
         }
 
         for (int i = 0; i < noteButtons2.length; i++){
             final int index = i;
-            noteButtons2[i].setOnClickListener(view -> reproducirSonido(index));
+            noteButtons2[i].setOnClickListener(view -> {
+                reproducirSonido(index);
+                instrumentosonando(instrumentos[index]);
+            });
         }
 
         for (int i = 0; i < noteimageButtons.length; i++){
             final int index = i;
-            noteimageButtons[i].setOnClickListener(view -> reproducirSonido(index));
+            noteimageButtons[i].setOnClickListener(view -> {
+                reproducirSonido(index);
+                instrumentosonando(instrumentos[index]);
+            });
         }
+    }
+
+    private void instrumentosonando(String instrumento){
+        Toast.makeText(this, "El instrumento sonando es: " + instrumento, Toast.LENGTH_SHORT).show();
     }
 
     private void reproducirSonido(int noteIndex) {

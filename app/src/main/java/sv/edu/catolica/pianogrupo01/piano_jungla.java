@@ -53,21 +53,34 @@ public class piano_jungla extends BaseActivity {
         noteSounds = new int[]{
                 R.raw.dog,  // DO
                 R.raw.rhino,    // RE
-                R.raw.chicken,    // MI
+                R.raw.pollito,    // MI
                 R.raw.pig,    // FA
                 R.raw.sheep,   // SOL
                 R.raw.crocodile,    // LA
                 R.raw.monkey     // SI
         };
 
+        String[] notas = {"Perro", "Rinoceronte", "Pollito", "Cerdo", "Oveja", "Cocodrilo", "Mono"};
+
         for (int i = 0; i < noteButtons.length; i++){
             final int index = i;
-            noteButtons[i].setOnClickListener(view -> reproducirSonido(index));
+            noteButtons[i].setOnClickListener(view -> {
+                reproducirSonido(index);
+                animalsonando(notas[index]);
+            });
         }
+
         for (int i = 0; i < noteimageButtons.length; i++){
             final int index = i;
-            noteimageButtons[i].setOnClickListener(view -> reproducirSonido(index));
+            noteimageButtons[i].setOnClickListener(view ->{
+                reproducirSonido(index);
+                animalsonando(notas[index]);
+            });
         }
+    }
+
+    private void animalsonando(String animal){
+        Toast.makeText(this, "El animal sonando es: " + animal, Toast.LENGTH_SHORT).show();
     }
 
     private void reproducirSonido(int noteIndex) {

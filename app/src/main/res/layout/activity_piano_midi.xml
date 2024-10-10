@@ -1,82 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center"
+    android:background="#000"
     tools:context=".piano_midi">
 
+    <!-- Teclas naturales -->
     <Button
         android:id="@+id/button_do"
-        android:layout_width="0dp"
-        android:layout_height="516dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Do"
-        android:textColor="#000000" />
+        android:text="DO"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="spread"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_re" />
 
     <Button
         android:id="@+id/button_re"
-        android:layout_width="0dp"
-        android:layout_height="504dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Re"
-        android:textColor="#000000" />
+        android:text="RE"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_do"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_mi" />
 
     <Button
         android:id="@+id/button_mi"
-        android:layout_width="0dp"
-        android:layout_height="490dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Mi"
-        android:textColor="#000000" />
+        android:text="MI"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_re"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_fa" />
 
     <Button
         android:id="@+id/button_fa"
-        android:layout_width="0dp"
-        android:layout_height="501dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Fa"
-        android:textColor="#000000" />
+        android:text="FA"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_mi"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_sol" />
 
     <Button
         android:id="@+id/button_sol"
-        android:layout_width="0dp"
-        android:layout_height="501dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Sol"
-        android:textColor="#000000" />
+        android:text="SOL"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_fa"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_la" />
 
     <Button
         android:id="@+id/button_la"
-        android:layout_width="0dp"
-        android:layout_height="499dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="La"
-        android:textColor="#000000" />
+        android:text="LA"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_sol"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/button_si" />
 
     <Button
         android:id="@+id/button_si"
-        android:layout_width="0dp"
-        android:layout_height="547dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Si"
-        android:textColor="#000000" />
+        android:text="SI"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_la"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Teclas sostenidas -->
+    <Button
+        android:id="@+id/button_do_s"
+        android:layout_width="65dp"
+        android:layout_height="142dp"
+        android:backgroundTint="#000000"
+        android:text="DO#"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_do"
+        app:layout_constraintEnd_toStartOf="@id/button_re" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button_re_s"
+        android:layout_width="65dp"
+        android:layout_height="142dp"
+        android:backgroundTint="#000000"
+        android:text="RE#"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_re"
+        app:layout_constraintEnd_toStartOf="@id/button_mi" />
+
+    <Button
+        android:id="@+id/button_fa_s"
+        android:layout_width="65dp"
+        android:layout_height="142dp"
+        android:backgroundTint="#000000"
+        android:text="FA#"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_fa"
+        app:layout_constraintEnd_toStartOf="@id/button_sol" />
+
+    <Button
+        android:id="@+id/button_sol_s"
+        android:layout_width="65dp"
+        android:layout_height="142dp"
+        android:backgroundTint="#000000"
+        android:text="SOL#"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_sol"
+        app:layout_constraintEnd_toStartOf="@id/button_la" />
+
+    <Button
+        android:id="@+id/button_la_s"
+        android:layout_width="65dp"
+        android:layout_height="142dp"
+        android:backgroundTint="#000000"
+        android:text="LA#"
+        android:textColor="#FFFFFF"
+        android:elevation="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_la"
+        app:layout_constraintEnd_toStartOf="@id/button_si" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

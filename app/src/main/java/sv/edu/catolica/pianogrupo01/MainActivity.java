@@ -55,10 +55,19 @@ public class MainActivity extends BaseActivity {
             R.raw.si     // SI
         };
 
+        String[] noteNames = {"Do", "Re", "Mi", "Fa", "Sol", "La", "Si"};
+
         for (int i = 0; i < noteButtons.length; i++) {
             final int noteIndex = i;
-            noteButtons[i].setOnClickListener(view -> reproducirSonido(noteIndex));
+            noteButtons[i].setOnClickListener(view -> {
+                reproducirSonido(noteIndex);
+                NotaSonando(noteNames[noteIndex]);
+            });
         }
+    }
+
+    private void NotaSonando(String nota){
+        Toast.makeText(this, "Esta Sonando la tecla " + nota, Toast.LENGTH_SHORT).show();
     }
 
     private void reproducirSonido(int noteIndex) {
