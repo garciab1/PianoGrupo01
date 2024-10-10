@@ -16,7 +16,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#028C8B"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_dooinstru_image"
@@ -64,7 +65,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#484264"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_reeinstru_image"
@@ -95,7 +97,7 @@
             android:backgroundTint="#484264"
             android:text="Re"
             android:textColor="#000000"
-            tools:ignore="HardcodedText,NewApi,TextContrastCheck,VisualLintBounds" />
+            tools:ignore="HardcodedText,NewApi,RtlHardcoded,TextContrastCheck,VisualLintBounds" />
 
     </LinearLayout>
 
@@ -106,7 +108,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#F57F17"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_miinstru_image"
@@ -138,7 +141,7 @@
             android:backgroundTint="#F57F17"
             android:text="Mi"
             android:textColor="#000000"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,RtlHardcoded" />
     </LinearLayout>
 
     <!-- Tecla FA -->
@@ -148,7 +151,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#880E4F"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_fainstru_image"
@@ -159,7 +163,7 @@
             android:contentDescription="Guitarra, tecla Fa"
             android:scaleType="fitXY"
             android:src="@drawable/guitarra"
-            tools:ignore="HardcodedText,VisualLintBounds" />
+            tools:ignore="HardcodedText,VisualLintBounds,ImageContrastCheck" />
 
         <Button
             android:id="@+id/fanegra"
@@ -180,7 +184,7 @@
             android:backgroundTint="#880E4F"
             android:text="Fa"
             android:textColor="#000000"
-            tools:ignore="HardcodedText,TextContrastCheck" />
+            tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
 
     </LinearLayout>
 
@@ -191,7 +195,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#558B2F"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_solinstru_image"
@@ -234,7 +239,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#283593"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_lainstru_image"
@@ -266,7 +272,7 @@
             android:backgroundTint="#283593"
             android:text="La"
             android:textColor="#BCAAA4"
-            tools:ignore="HardcodedText,TextContrastCheck,VisualLintBounds" />
+            tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintBounds" />
     </LinearLayout>
 
     <!-- Tecla SI -->
@@ -276,7 +282,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="#F9A825"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_siinstru_image"
@@ -308,7 +315,7 @@
             android:backgroundTint="#F9A825"
             android:text="Si"
             android:textColor="@color/black"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,RtlHardcoded" />
     </LinearLayout>
 
 </LinearLayout>

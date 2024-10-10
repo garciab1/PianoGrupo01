@@ -21,7 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_default="spread"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_re" />
+        app:layout_constraintEnd_toStartOf="@id/button_re"
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
     <Button
         android:id="@+id/button_re"
@@ -33,7 +34,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_do"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_mi" />
+        app:layout_constraintEnd_toStartOf="@id/button_mi"
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
     <Button
         android:id="@+id/button_mi"
@@ -45,7 +47,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_re"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_fa" />
+        app:layout_constraintEnd_toStartOf="@id/button_fa"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_fa"
@@ -57,7 +60,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_mi"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_sol" />
+        app:layout_constraintEnd_toStartOf="@id/button_sol"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_sol"
@@ -69,7 +73,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_fa"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_la" />
+        app:layout_constraintEnd_toStartOf="@id/button_la"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_la"
@@ -81,7 +86,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_sol"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toStartOf="@id/button_si" />
+        app:layout_constraintEnd_toStartOf="@id/button_si"
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
     <Button
         android:id="@+id/button_si"
@@ -93,7 +99,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_la"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,VisualLintBounds" />
     <!-- Teclas sostenidas -->
     <Button
         android:id="@+id/button_do_s"
@@ -105,7 +112,8 @@
         android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_do"
-        app:layout_constraintEnd_toStartOf="@id/button_re" />
+        app:layout_constraintEnd_toStartOf="@id/button_re"
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
     <Button
         android:id="@+id/button_re_s"
@@ -117,7 +125,8 @@
         android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_re"
-        app:layout_constraintEnd_toStartOf="@id/button_mi" />
+        app:layout_constraintEnd_toStartOf="@id/button_mi"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_fa_s"
@@ -129,7 +138,8 @@
         android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_fa"
-        app:layout_constraintEnd_toStartOf="@id/button_sol" />
+        app:layout_constraintEnd_toStartOf="@id/button_sol"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_sol_s"
@@ -141,7 +151,8 @@
         android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_sol"
-        app:layout_constraintEnd_toStartOf="@id/button_la" />
+        app:layout_constraintEnd_toStartOf="@id/button_la"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button_la_s"
@@ -153,6 +164,7 @@
         android:elevation="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_la"
-        app:layout_constraintEnd_toStartOf="@id/button_si" />
+        app:layout_constraintEnd_toStartOf="@id/button_si"
+        tools:ignore="HardcodedText,VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

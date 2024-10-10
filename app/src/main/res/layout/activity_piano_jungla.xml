@@ -54,7 +54,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_ree_image"
@@ -86,7 +87,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_mii_image"
@@ -118,7 +120,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_faa_image"
@@ -150,7 +153,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_sol_image"
@@ -182,7 +186,8 @@
         android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:background="@color/white"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
 
         <ImageButton
             android:id="@+id/button_laa_image"
