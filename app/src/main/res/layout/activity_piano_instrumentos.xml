@@ -42,7 +42,6 @@
             android:layout_width="109dp"
             android:layout_height="523dp"
             android:layout_margin="2dp"
-            android:layout_marginLeft="-5dp"
             android:layout_weight="0.8"
             android:backgroundTint="@color/design_default_color_secondary_variant"
             android:text="Do"
@@ -60,13 +59,12 @@
 
     <!-- Tecla RE -->
     <LinearLayout
-        android:layout_width="7dp"
+        android:layout_width="3dp"
         android:layout_height="425dp"
         android:layout_marginRight="4dp"
         android:layout_weight="1"
-        android:background="@android:color/system_accent3_700"
-        android:orientation="vertical"
-        tools:ignore="NewApi">
+        android:background="#484264"
+        android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/button_reeinstru_image"

@@ -17,6 +17,7 @@
             android:exported="false" />
         <activity
             android:name=".About_us"
+            android:configChanges="orientation|screenSize"
             android:exported="false" />
         <activity
             android:name=".piano_instrumentos"

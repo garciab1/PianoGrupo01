@@ -16,6 +16,7 @@ public class piano_instrumentos extends BaseActivity {
 
     private Button[] noteButtons;
     private ImageButton[] noteimageButtons;
+    private Button[] noteButtons2;
     private int[] noteSounds;
     private MediaPlayer mediaPlayer;
 
@@ -50,6 +51,16 @@ public class piano_instrumentos extends BaseActivity {
                 findViewById(R.id.button_siinstru_image)
         };
 
+        noteButtons2 = new Button[]{
+                findViewById(R.id.donegra),
+                findViewById(R.id.renegra),
+                findViewById(R.id.minegra),
+                findViewById(R.id.fanegra),
+                findViewById(R.id.solnegra),
+                findViewById(R.id.lanegra),
+                findViewById(R.id.sinegra)
+        };
+
         noteSounds = new int[]{
                 R.raw.flauta,  // DO
                 R.raw.bateria,    // RE
@@ -64,6 +75,12 @@ public class piano_instrumentos extends BaseActivity {
             final int index = i;
             noteButtons[i].setOnClickListener(view -> reproducirSonido(index));
         }
+
+        for (int i = 0; i < noteButtons2.length; i++){
+            final int index = i;
+            noteButtons2[i].setOnClickListener(view -> reproducirSonido(index));
+        }
+
         for (int i = 0; i < noteimageButtons.length; i++){
             final int index = i;
             noteimageButtons[i].setOnClickListener(view -> reproducirSonido(index));
