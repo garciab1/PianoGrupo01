@@ -11,6 +11,9 @@
     android:background="#000000"
     tools:ignore="DisableBaselineAlignment">
 
+
+    <!-- Tecla perro-->
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -43,6 +46,8 @@
             tools:ignore="HardcodedText,InefficientWeight,NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla Rinoceronte -->
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -74,6 +79,7 @@
             tools:ignore="NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla pollo -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -105,6 +111,7 @@
             tools:ignore="NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla Cerdo -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -136,6 +143,7 @@
             tools:ignore="NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla Sheep -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -167,6 +175,7 @@
             tools:ignore="InefficientWeight,NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla cocdrile -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -198,6 +207,7 @@
             tools:ignore="HardcodedText,NestedWeights" />
     </LinearLayout>
 
+    <!-- Tecla monito -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"

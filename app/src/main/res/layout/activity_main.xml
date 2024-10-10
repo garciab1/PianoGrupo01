@@ -10,6 +10,7 @@
     android:background="#000000"
     android:padding="16dp">
 
+    <!-- Tecla Do -->
     <Button
         android:id="@+id/button_do"
         android:layout_width="0dp"
@@ -21,6 +22,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla Re -->
     <Button
         android:id="@+id/button_re"
         android:layout_width="0dp"
@@ -32,6 +34,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla Mi -->
     <Button
         android:id="@+id/button_mi"
         android:layout_width="0dp"
@@ -43,6 +46,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla Fa -->
     <Button
         android:id="@+id/button_fa"
         android:layout_width="0dp"
@@ -54,6 +58,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla Sol -->
     <Button
         android:id="@+id/button_sol"
         android:layout_width="0dp"
@@ -65,6 +70,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla La -->
     <Button
         android:id="@+id/button_la"
         android:layout_width="0dp"
@@ -76,6 +82,7 @@
         android:textColor="#000000"
         tools:ignore="ButtonStyle,HardcodedText" />
 
+    <!-- Tecla Si -->
     <Button
         android:id="@+id/button_si"
         android:layout_width="0dp"
